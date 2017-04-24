@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search For Report</title>
+</head>
+<body>
+<form id="values">
+    <div class="reportId">
+        Report Id:<br>
+        <input type="text" name="reportId" onkeypress="enterPressed(event)">
+    </div>
+    <br>
+
+    <div class="reportDate">
+        Report Date:    <br>
+        <input type="text" name="reportDate" onkeypress="enterPressed(event)">
+    </div>
+    <br>
+
+    <div class="officerId">
+        Officer Id:<br>
+        <input type="text" name="officerId" onkeypress="enterPressed(event)">
+    </div>
+    <br>
+
+    <div class="reportName">
+        Report Name:<br>
+        <input type="text" name="reportName" onkeypress="enterPressed(event)">
+    </div>
+    <br>
+</form>
+
+<input id="submit" type="button" onclick="" value="Search">
+
+<script>
+    function enterPressed(e){
+        if (e.which == 13 || e.keyCode == 13) {
+            calculation()
+        }
+    }
+</script>
+
+</body>
+</html>
