@@ -14,7 +14,7 @@
     <br>
 
     <div class="reportDate">
-        Report Date:    <br>
+        Report Date: <br>
         <input type="text" name="reportDate" onkeypress="enterPressed(event)">
     </div>
     <br>
@@ -35,9 +35,10 @@
 <input id="submit" type="button" onclick="" value="Search">
 
 <script>
-    function enterPressed(e){
+    function enterPressed(e) {
         if (e.which == 13 || e.keyCode == 13) {
-            calculation()
+            // TODO Return data values
+            window.location.href = 'SelectReport.html'
         }
     }
 </script>
