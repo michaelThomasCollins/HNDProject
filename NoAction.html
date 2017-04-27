@@ -38,10 +38,52 @@
 </div>
 
 <div class="buttons">
-    <button type="submit" onclick="">Edit</button>
-    <button type="submit" onclick="">Verify</button>
-    <button type="submit" onclick="">Deny</button>
-    <button type="submit" onclick="">Submit</button>
+    <button type="submit" onclick="enableColumns()">Edit</button>
+    <button type="submit" onclick="verify()">Verify</button>
+    <button type="submit" onclick="deny()">Deny</button>
+    <button type="submit" onclick="submit()">Submit</button>
 </div>
+
+<script>
+    /*
+    This method is used to toggle whether or not the columns are being edited
+     */
+    function enableColumns(){
+        //TODO Check to see if user is entitled to edit document
+        var isEnabled = false;
+        if(isEnabled){
+
+        } else {
+
+        }
+    }
+
+    /*
+    T
+     */
+    function submit(){
+        //TODO implement submission to database
+        alert("Submission Complete");
+        window.location.href = 'Index.html'
+    }
+
+    function deny(){
+        if(confirm("Are you sure?")){
+            //TODO implement connection to database
+            alert("Submission Complete");
+            window.location.href = 'Index.html'
+        }
+    }
+
+    function verify(){
+        if(confirm("Are you sure?")){
+            //TODO implement connection to database
+            alert("Submission Complete");
+            window.location.href = 'Index.html'
+        }
+    }
+    // Check Editing permissions on startup
+    window.onload = enableColumns();
+</script>
 </body>
 </html>

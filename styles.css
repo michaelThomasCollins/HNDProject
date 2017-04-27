@@ -2,7 +2,7 @@ body {
     background-color: lightcyan;
 }
 
-input[type=text], input[type=number], select {
+input[type=text], input[type=number], input[type=password], input[type=date], select {
     width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
